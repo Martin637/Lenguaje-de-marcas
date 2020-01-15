@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="author" content="Martín García Castillo">
+    <title>Ejercicio4</title>
+    <style>
+        thead {
+            text-align: center;
+
+        }
+    </style>
 </head>
 <body>
-    dsd
+    <table border="2px" align="center" width="5">
+    <caption>Ejemplo de tabla con colores distintos en cada celda</caption>
+    <thead>
+        <th>Color 1</th>
+        <th>Color 2</th>
+        <th>Color 3</th>
+    </thead>
+    <body>
+        <tr>
+            <td bgcolor="red">Color #FF0000</td>
+            <td bgcolor="lime">Color #00FF00</td>
+            <td bgcolor="#00FFAA" rowspan="2">Color #00FFAA</td>
+        </tr>
+        <tr>
+            <td bgcolor="#11CCCC">Color #11CCCC</td>
+            <td bgcolor="#22AA22">Color #22AA22</td>
+        </tr>
+        <tr>
+            <td bgcolor="#AABB00" colspan="2">#Color #AABB00</td>
+            <td bgcolor="#BB00BB">Color #BB00BB</td>
+        </tr>
+        <tr>
+            <td colspan="3">Con este ejemplo de pie de tabla se puede ver que se amplía el tamaño para incluir el texto
+        </tr>
+    </body>
+    </table>
 </body>
 </html>
