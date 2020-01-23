@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Martín García Castillo">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <h3>Rellena tu CV</h3>
+    <form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data"></form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="provincia">Provincia</label><br/>
+            <select id="provincia" name="provincia">
+                        <option value=" " selected="selected">- selecciona -</option>
+                        <optgroup label="Andalucía">
+                            <option value="01">Jaén</option>
+                            <option value="02">Córdoba</option>
+                            <option value="03">Sevilla</option>
+                            <option value="04">Huelva</option>
+                            <option value="05">Málaga</option>
+                            <option value="06">Cádiz</option>
+                            <option value="07">Granada</option>
+                            <option value="08">Almería</option>
+                        <optgroup label="Aragón">
+                            <option value="09">Huesca</option>
+                            <option value="10">Teruel</option>
+                            <option value="11">Zaragoza</option>
+                        <optgroup label="Asturias">
+                            <option value="12">Oviedo</option>
+                        <optgroup label="Baleares">
+                            <option value="13">Palma de Mallorca</option>
+                        <optgroup label="Canarias">
+                            <option value="14">Santa Cruz de Tenerife</option>
+                            <option value="15">Las Palmas de Gran Canaria</option>
+                        <optgroup label="Castilla-La Mancha">
+                            <option value="16">Albacete</option>
+                            <option value="17">Ciudad Real</option>
+                            <option value="18">Cuenca</option>
+                            <option value="19">Guadalajara</option>
+                            <option value="20">Toledo</option>
+                        <optgroup label="Castilla y León">
+                            <option value="21">Ávila</option>
+                            <option value="22">Burgos</option>
+                            <option value="23">León</option>
+                            <option value="24">Salamanca</option>
+                            <option value="25">Segovia</option>
+                            <option value="26">Soria</option>
+                            <option value="27">Valladolid</option>
+                            <option value="28">Zamora</option>
+                        <optgroup label="Cataluña">
+                            <option value="29">Barcelona</option>
+                            <option value="30">Girona</option>
+                            <option value="31">Lleida</option>
+                            <option value="32">Tarragona</option>
+                        <optgroup label="Comunidad Valenciana">
+                            <option value="33">Alicante</option>
+                            <option value="34">Castellón de la Plana</option>
+                            <option value="35">Valencia</option>
+                        <optgroup label="Extremadura">
+                            <option value="36">Badajoz</option>
+                            <option value="37">Cáceres</option>
+                        <optgroup label="Galicia">
+                            <option value="38">La Coruña</option>
+                            <option value="39">Lugo</option>
+                            <option value="40">Ourense</option>
+                            <option value="41">Pontevedra</option>
+                        <optgroup label="Madrid">
+                            <option value="42">Madrid</option>
+                        <optgroup label="Galicia">
+                            <option value="43">Murcia</option>
+                        <optgroup label="Navarra">
+                            <option value="44">Pamplona</option>
+                        <optgroup label="País Vasco">
+                            <option value="45">Bilbao</option>
+                            <option value="46">San Sebastián</option>
+                            <option value="47">Vitoria</option>
+                        <optgroup label="La Rioja">
+                            <option value="48">Logroño</option>
+            </select><br/><br/>
+            <label for="fecha_dia">Fecha de nacimiento</label><br/>
+            <input type="text" size="3" maxlength="2" name="fecha_dia" id="fecha_dia"/> de
+            <select name="fecha_mes" id="fecha_mes">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select> de
+            <input type="text" size="5" maxlength="4" name="fecha_año" id="fecha_año"><br/><br/>
+            <label for="temasDeInteres">Temas de interés</label><br/>
+            <select multiple="multiple" size="5" name="temasDeInteres" id="temasDeInteres">
+                <option value="001">Administración de base de datos</option>
+                <option value="002">Análisis y programación</option>
+                <option value="003">Arquitectura</option>
+                <option value="004">Calidad</option>
+                <option value="005">ERP, CRM, Business Intelligence</option>
+                <option value="006">Depuración</option>
+                <option value="007">Programación</option>
+                <option value="008">Desarrollo</option>
+                <option value="009">Compilación</option>
+            </select>
+        </fieldset>
+</body>
+</html>
