@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Martín García Castillo">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <h3>Información sonbre el producto</h3>
+    <fieldset>
+        <legend>Datos básicos</legend>
+        <label for="idNombre">Nombre</label><br/>
+        <input type="text" name="Nombre" id="idNombre">
+        <p>
+        <label for="idDescripción">Descripción</label><br/>
+        <input type="text" size="25"  name="Descripción" id="idDescripción">
+        <p>
+        <label for="idFoto">Foto</label>
+        <input type="file" name="Foto" id="idFoto">
+        <p>
+        <input type="checkbox" name="AñadirContador" id="idAñadirContador">
+        <label for="idAñadirContador">Añadir contador de visitas</label>
+    </fieldset>
+    <fieldset>
+        <legend>Datos económicos</legend>
+        <label for="idPrecio">Precio</label>
+        <input type="number" name="Precio" id="idPrecio">&nbsp;€&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="idImpuestos">Impuestos</label>
+        <select name="Impuestos" id="idImpuestos">
+            <option value="1">4%</option>
+            <option value="2">7%</option>
+            <option value="3">16%</option>
+            <option value="4">25%</option>
+        </select>
+        <p>
+        Promoción<br/>
+        <input type="radio" name="Promoción" id="idPromoción">
+        <label for="idPromoción">Ninguno</label><br/>
+        <input type="radio" name="Promoción" id="idPromoción1">
+        <label for="idPromoción1">Transporte gratuito</label><br/>
+        <input type="radio" name="Promoción" id="idPromoción2">
+        <label for="idPromoción2">Descuento 5%</label>
+    </fieldset>
+</body>
+</html>
