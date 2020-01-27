@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Martín García Castillo">
+    <title>Ejercicio7</title>
+</head>
+<body>
+    <h1>Nuevos controles en los formularios HTML5</h1>
+    <label for="idNombre">Nombre (obligatorio)</label>
+    <input type="text" name="Nombre" id="idNombre">
+    <p>
+    <label for="idContraseña">Contraseña (obligatoria)</label>
+    <input type="password" name="Contraseña" id="idContraseña">
+    <p>
+    <label for="idTeléfono">Teléfono</label>
+    <input type="tel" name="Teléfono" id="idTeléfono" placeholder="(953)------">
+    <p>
+    <label for="idCorreo">Correo electrónico (gmail)</label>
+    <input type="email" name="Correo" id="idCorreo">
+    <p>
+    <label for="idWeb">Página web:</label>
+    <input type="url" name="Web" id="idWeb">
+    <p>
+    <label for="idFechahora">Fecha/hora de envío</label>
+    <input type="datetime-local" name="Fechahora" id="idFechahora" min="2020-01-20 00:00">&nbsp;(mínimo 20/01/2020)
+    <p>
+    <label for="idFecha">Fecha de resolución</label>
+    <input type="date" name="Fecha" id="idFecha" max="2020-02-20">&nbsp;(máximo 20/02/2020)
+    <p>
+    <label for="idArchivos">Número de archivos enviados</label>
+    <input type="number" name="Archivos" id="idArchivos" min="0" max="5" value="0">
+    <p>
+    <label for="idColor">Elige un color:</label>
+    <input type="color" name="Color" id="idColor" value="#00FF00">
+    <p>
+    <label for="idPalabra">Indica la palabra que quieres buscar</label>
+    <input type="text" name="Palabra" id="idPalabra" placeholder="palabra clave">
+    <p>
+    <p>
+     <label for="idPuntuación">Puntuación (entre 0 y 10)</label>
+     <input type="range" name="Puntuación" id="idPuntuación" min="0" max="10" value="7">
+    <p>
+    <fieldset>
+        <legend>Conocimiento de idiomas</legend>
+        <input type="checkbox" name="Idioma" id="idInglés">
+        <label for="idInglés">Inglés</label>
+        <br/>
+        <input type="checkbox" name="Idioma" id="idFrancés">
+        <label for="idFrancés">Francés</label>
+        <br/>
+        <input type="checkbox" name="Idioma" id="idAlemán">
+        <label for="idAlemán">Alemán</label>
+    </fieldset>
+    <br/>
+    Nivel de Inglés
+    <br/>
+    <input type="radio" name="Nivel" id="idBajo" checked="checked">
+    <label for="idBajo">Bajo</label>
+    <br/>
+    <input type="radio" name="Nivel" id="idMedio">
+    <label for="idMedio">Medio</label>
+    <br/>
+    <input type="radio" name="Nivel" id="idAlto">
+    <label for="idAlto">Alto</label>
+</body>
+</html>
